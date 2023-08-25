@@ -11,6 +11,17 @@ class Profile extends StatelessWidget {
       appBar: AppBar(
         title: Text("Profile page"),
       ),
+      body: Container(
+        child: Column(
+          children: [
+            CircleAvatar(
+              backgroundImage: NetworkImage(
+                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7WfE6wFfdpeFph92LdEFJFnula0ecIObiQ&usqp=CAU"),
+              radius: 100,
+            )
+          ],
+        ),
+      ),
     );
   }
 }
